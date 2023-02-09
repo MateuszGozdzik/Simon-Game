@@ -22,7 +22,7 @@ function checkAnswer(currentLevel) {
         }
     } else {
         console.log("wrong")
-        var wrong_sound = new Audio("sounds/wrong.mp3")
+        var wrong_sound = new Audio("static/sounds/wrong.mp3")
         wrong_sound.play()
 
         $("body").addClass("game-over")
@@ -43,19 +43,19 @@ function makeSound(colour) {
 
     switch (colour) {
         case "red":
-            var red_sound = new Audio("sounds/red.mp3");
+            var red_sound = new Audio("static/sounds/red.mp3");
             red_sound.play();
             break;
         case "blue":
-            var blue_sound = new Audio("sounds/blue.mp3");
+            var blue_sound = new Audio("static/sounds/blue.mp3");
             blue_sound.play();
             break;
         case "green":
-            var green_sound = new Audio("sounds/green.mp3");
+            var green_sound = new Audio("static/sounds/green.mp3");
             green_sound.play();
             break;
         case "yellow":
-            var yellow_sound = new Audio("sounds/yellow.mp3");
+            var yellow_sound = new Audio("static/sounds/yellow.mp3");
             yellow_sound.play();
             break;
     }
